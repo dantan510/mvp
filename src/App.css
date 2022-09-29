@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+.app-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar container */
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#gymLogo {
+  width: 100px;
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+  flex-direction: row;
+  margin-left: auto;
+  padding: 15px
+}
+
+/*  */
+
+/* header container */
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header-body {
+  display: flex;
+  padding: 50px;
+}
+
+#mainLogo {
+  width: 600px;
+  height: 600px;
+}
+
+/*  */
+
+/* search bar */
+
+.search-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#search-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+#search-text {
+  text-align: center;
+  font-size: 30px;
+}
+
+#search-input {
+  border-radius: 3px;
+  padding: 10px;
+  width: 900px;
+  margin-top: 20px;
+}
+
+#search-button {
+  margin-top: 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  background-color: red;
   color: white;
+  width: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+/*  */
+
+/* Workout Log*/
+
+#workout-header {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+#workout-status-bar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  align-items: center;
+  width: 80%;
+  font-size: 20px;
+}
+
+#status-text {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+  padding: 10px 100px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.workout-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  */
+
+/* workout entry  */
+
+.workout-entry-container {
+  display: flex;
+  justify-content: center;
+}
+
+.entry-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workout-card {
+  display: flex;
+  width: 80%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.workout-card form {
+  display: flex;
+}
+
+.edit-form {
+  display: flex;
+  padding: 5px;
+}
+
+.workout-body {
+  margin: 0px 85px;
+}
+
+#button-edit {
+  margin: 0px 30px;
+}
+
+.logger {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.logger input {
+  justify-content: flex-end;
+}
+
+/*  */
+
+
+/* exercises container */
+
+.exercises-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  text-align: center;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.exercise-card-container {
+  margin-top: 10px;
+}
+
+
+.exercise-name {
+  text-align: none;
+}
+
+
+
+/*  */
